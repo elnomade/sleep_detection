@@ -1,5 +1,5 @@
-Sleep Detection
-===============
+Sleep Detection by Globant Labs
+===============================
 
 **Sleep Detection** is a proof of concept application for Windows that will detect when a driver is falling asleep and alert him or her accordingly.
 
