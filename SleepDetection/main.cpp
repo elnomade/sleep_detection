@@ -7,6 +7,8 @@
 class DetectFaces {
 public:
 	DetectFaces( void )
+		: m_faceCascade(),
+		m_eyesCascade()
 	{
 		if (!m_faceCascade.load("haarcascade_frontalface_alt.xml"))
 		{
@@ -28,7 +30,7 @@ public:
 		typedef std::vector<cv::Rect> Faces, Eyes;
 
 		Faces faces;
-		m_faceCascade.detectMultiScale(gray, faces, 1.1, 3, CV_HAAR_SCALE_IMAGE/*|CV_HAAR_FIND_BIGGEST_OBJECT*/, cv::Size(30, 30));
+		m_faceCascade.detectMultiScale(gray, faces, 1.1, 3, CV_HAAR_SCALE_IMAGE|CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(30, 30));
 
 		std::for_each(
 			faces.cbegin(),
@@ -68,8 +70,10 @@ public:
 			});
 		});
 	}
+
 private:
 	cv::CascadeClassifier m_faceCascade;
+
 	cv::CascadeClassifier m_eyesCascade;
 };
 
