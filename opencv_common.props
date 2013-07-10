@@ -12,7 +12,6 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(OPENCV_DIR)/$(TargetedSDKArchitecture)/vc11/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_core$(OPENCV_VERSION)d.lib;opencv_highgui$(OPENCV_VERSION)d.lib;opencv_imgproc$(OPENCV_VERSION)d.lib;opencv_objdetect$(OPENCV_VERSION)d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Lib />
   </ItemDefinitionGroup>
