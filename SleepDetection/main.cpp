@@ -85,13 +85,11 @@ public:
 			cv::Scalar(  0.0, 255.0,   0.0), // GREEN	-	Detected face and both eyes
 		};
 
-		if (alarmLevel > 2) alarmLevel = 2; // clamp it in case of a Buddha eye.
-
 		cv::rectangle(
 			src,
 			cv::Rect(0, 0, src.size().width, src.size().height),
 			alarmColors[alarmLevel],
-			4);
+			10);
 	}
 
 private:
