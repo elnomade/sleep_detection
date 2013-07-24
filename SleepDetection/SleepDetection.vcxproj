@@ -34,11 +34,13 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\3rdParty\boost\boost.props" />
     <Import Project="..\3rdParty\opencv\opencv_common.props" />
     <Import Project="..\3rdParty\opencv\opencv_debug.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\3rdParty\boost\boost.props" />
     <Import Project="..\3rdParty\opencv\opencv_common.props" />
     <Import Project="..\3rdParty\opencv\opencv_release.props" />
   </ImportGroup>
@@ -82,11 +84,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="SleepDetector.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="haarcascade_eye_tree_eyeglasses.xml" />
     <Xml Include="haarcascade_frontalface_alt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SleepDetector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
