@@ -8,10 +8,18 @@ We keep a project backlog in our [Trello board](https://trello.com/board/sleep-d
 ====================
 **Compilation prerequisites:**
 
-1. Download [OpenCV](http://opencv.org/) for Windows.
-2. Extract it to any directory, for example: *C:\OpenCV\246*.
-3. Edit *opencv_common.props* User Macros value *OPENCV_DIR*, to follow our example, point it to *C:\OpenCV*.
-4. Compile it!
+This project is developed under Visual Studio 2012, but should be easily compiled with minimal configuration changes.
+
+**OpenCV:**
+  1. Download [OpenCV](http://opencv.org/) for Windows.
+  2. Extract it to directory: *`<clone dir>`\3rdParty\opencv\246*, replace the version number with yours.
+  3. Ready!
+
+**Boost:**
+  1. Download [Boost](http://www.boost.org/) boost source code.
+  2. Extract it to *`<clone dir>`\3rdParty\boost\boost_1_54_0*, replace the version number with yours.
+  3. Compile boost, optionally you can use 3rdParty's `build.bat`.
+  4. Ready!
 
 ====================
 **Run within Visual Studio:**
