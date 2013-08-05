@@ -16,7 +16,7 @@ This project is developed under Visual Studio 2012, but should be easily compile
   3. Ready!
 
 **Boost:**
-  1. Download [Boost](http://www.boost.org/) boost source code.
+  1. Download [Boost](http://www.boost.org/) source code.
   2. Extract it to *`<clone dir>`\3rdParty\boost\boost_1_54_0*, replace the version number with yours.
   3. Compile boost, optionally you can use 3rdParty's `build.bat`.
   4. Ready!
