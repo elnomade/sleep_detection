@@ -12,8 +12,6 @@ class SleepDetector
 public:
 	explicit SleepDetector( void );
 
-	~SleepDetector( void );
-
 	void operator()( cv::Mat & src );
 
 public:
